@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      // Keep old bookmarks working while publishing identical files to both hosts.
+      if (window.location.hostname.toLowerCase() === 'dragondescentzerotsu.github.io') {
+        window.location.replace('https://tianangleng.github.io/peptide_to_smiles/' + window.location.search + window.location.hash);
+      }
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6PGMYHWBS"></script>
     <script>
@@ -23,7 +29,7 @@
     >
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#f5f4ef">
-    <link rel="canonical" href="https://dragondescentzerotsu.github.io/peptide_to_smiles/">
+    <link rel="canonical" href="https://tianangleng.github.io/peptide_to_smiles/">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
     <meta property="og:type" content="website">
@@ -33,8 +39,8 @@
       property="og:description"
       content="PepLink converts peptide sequences to SMILES or SELFIES and helps interpret peptide-like SMILES for practical peptide informatics workflows."
     >
-    <meta property="og:url" content="https://dragondescentzerotsu.github.io/peptide_to_smiles/">
-    <meta property="og:image" content="https://dragondescentzerotsu.github.io/peptide_to_smiles/assets/og-preview.svg">
+    <meta property="og:url" content="https://tianangleng.github.io/peptide_to_smiles/">
+    <meta property="og:image" content="https://tianangleng.github.io/peptide_to_smiles/assets/og-preview.svg">
     <meta property="og:image:type" content="image/svg+xml">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -46,7 +52,7 @@
       name="twitter:description"
       content="PepLink converts peptide sequences to SMILES or SELFIES and helps interpret peptide-like SMILES for practical peptide informatics workflows."
     >
-    <meta name="twitter:image" content="https://dragondescentzerotsu.github.io/peptide_to_smiles/assets/og-preview.svg">
+    <meta name="twitter:image" content="https://tianangleng.github.io/peptide_to_smiles/assets/og-preview.svg">
     <meta name="twitter:image:alt" content="PepLink landing page preview">
 
     <link rel="stylesheet" href="styles.css">
@@ -60,7 +66,7 @@
         "operatingSystem": "Cross-platform",
         "softwareVersion": "0.1.0",
         "description": "PepLink is a Python package for peptide to SMILES, peptide SELFIES export, and conservative smiles to peptide workflows covering non-canonical amino acid support, selected cyclic peptide SMILES cases, and terminal modifications in forward generation.",
-        "url": "https://dragondescentzerotsu.github.io/peptide_to_smiles/",
+        "url": "https://tianangleng.github.io/peptide_to_smiles/",
         "codeRepository": "https://github.com/DragonDescentZerotsu/PepLink",
         "programmingLanguage": "Python",
         "license": "https://github.com/DragonDescentZerotsu/PepLink/blob/main/LICENSE",
@@ -471,7 +477,7 @@ print(smiles)</code></pre>
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>PepLink is a research software project for peptide sequence ↔ molecular string conversion.</p>
-        <p>Published site URL: https://dragondescentzerotsu.github.io/peptide_to_smiles/</p>
+        <p>Published site URL: https://tianangleng.github.io/peptide_to_smiles/</p>
       </div>
     </footer>
   </body>
